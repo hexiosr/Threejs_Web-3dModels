@@ -42,11 +42,11 @@ function init() {
     window.addEventListener( 'resize', onWindowResize, false );
 
 
-    camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight,	1,1000);
+    camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight,	0.1,10000);
 
     controls = new THREE.OrbitControls(camera,renderer.domElement);
     // 是否启用平移
-    controls.enablePan = false;
+    controls.enablePan = true;
     // 是否启用缩放
     controls.enableZoom = true;
     // 是否启用阻尼
