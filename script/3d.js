@@ -42,7 +42,7 @@ function init() {
     window.addEventListener( 'resize', onWindowResize, false );
 
 
-    camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight,	0.1,10000);
+    camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight,0.1,10000);
 
     controls = new THREE.OrbitControls(camera,renderer.domElement);
     // 是否启用平移
